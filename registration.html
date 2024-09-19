@@ -1,0 +1,48 @@
+<!DOCTYPE html>A
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" id = "registerStudent">Register Student</h1>
+        <div class="card p-4">
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="txtName">Name:</label>
+                    <input type="text" id="txtName" class="form-control" placeholder="Enter student name">
+                </div>
+                <div class="form-group">
+                    <label for="txtEmail">Email:</label>
+                    <input type="text" id="txtEmail" class="form-control" placeholder="Enter Email">
+                </div>
+                <button type="button" id="registerBtn" class="btn btn-primary w-100">Register</button>
+            </form>
+        </div>
+
+        <h2 class="text-center mt-5">Student List</h2>
+        <table class="table table-bordered mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>--</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="studentBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="register3.js"></script>
+    <script src="display3.js"></script>
+
+</body>
+
+</html>
